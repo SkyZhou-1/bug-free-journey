@@ -26,9 +26,7 @@ This project builds a fully functional verification and security testing pipelin
 
 ## 📊 System Architecture & Workflow
 
-## 📊 System Architecture & Workflow
-
-```text
+'''text
 [Original Audio] ──> [WMCodec Embedder] ──> [Embedded Base Audio]
                                                      │
                ┌─────────────────────────────────────┴─────────────────────────────────────┐
@@ -51,6 +49,7 @@ This project builds a fully functional verification and security testing pipelin
                                                    │
                                                    ▼
                                         [Optimal ACC / BER Matrix]
+'''
 ---
 
 ## 🚀 Getting Started (Colab Workflow)
