@@ -24,34 +24,6 @@ This project builds a fully functional verification and security testing pipelin
 
 ---
 
-## 📊 System Architecture & Workflow
-
-'''text
-[Original Audio] ──> [WMCodec Embedder] ──> [Embedded Base Audio]
-                                                     │
-               ┌─────────────────────────────────────┴─────────────────────────────────────┐
-               ▼                                                                           ▼
-       【 Blue Team Defense 】                                                      【 Red Team Attack 】
-  ┌───────────────────────────┐                                               ┌───────────────────────────┐
-  │ 1. Plain Baseline         │                                               │ 1. Benchmark Attacks      │
-  │ 2. TTA + Soft Logits Vote │                                               │    (Reverb/Resample/Noise)│
-  │ 3. Confidence Adaptive    │                                               │ 2. Band-Limited Stickers  │
-  │    Notch Filter           │                                               │ 3. DE Global Param Search │
-  └───────────────────────────┘                                               │ 4. Waveform PGD Refine    │
-               │                                                              └───────────────────────────┘
-               ▼                                                                           ▼
-    [Robust Bit Extraction]                                                    [Adversarial Audio Output]
-               └───────────────────────────────────┬───────────────────────────────────────┘
-                                                   ▼
-                                        【 Joint Metrics Engine 】
-                                         Alignment & Synchronization
-                                        (Max-Shift Bit Correspondence)
-                                                   │
-                                                   ▼
-                                        [Optimal ACC / BER Matrix]
-'''
----
-
 ## 🚀 Getting Started (Colab Workflow)
 
 ### 1. Installation & Environment Setup
